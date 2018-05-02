@@ -22,7 +22,7 @@ $(document).ready(function() {
     header: {
       left:   'title',
       center: '',
-      right:  'today prev,next nextYear'
+      right:  'today prevYear prev,next nextYear'
     },
     buttonText: {
       today:    "Aujourd'hui",
