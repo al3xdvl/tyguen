@@ -8,10 +8,10 @@ require mailgun
   #
   def contact(message)
     @body = message.body
-    mg_client = Mailgun::Client.new ENV['mailgun_api_key']
+    mg_client = Mailgun::Client.new ENV['MAILGUN_API_KEY']
     message_params = {:from => message.email,
                       :to => ENV['email'],
-                      :subject => 'Contact Form',
+                      :subject => 'Contact depuis tyguen.fr',
                       :text => message.body}
     mg_client.send_message ENV['sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org'], message_params
 
