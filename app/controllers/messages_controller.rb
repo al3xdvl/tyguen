@@ -4,12 +4,12 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new
+    @message = Message.new(message_params)
     if @message.valid?
-      MessageMailer.contact(@message).deliver_now
-      redirect_to messages_new_url, notice: "Nous avons bien reçu votre message. Nous y répondrons dès que possible."
+      MessageMailer.contact(@message).deliver
+      redirect_to :root, notice: "Nous avons bien reçu votre message. Nous y répondrons dès que possible."
     else
-      redirect_to :root
+      render :new
     end
   end
 
