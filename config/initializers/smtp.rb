@@ -1,6 +1,6 @@
 ActionMailer::Base.smtp_settings = {
   address: "smtp.gmail.com",
-  port: 587,
+  port: 465,
   domain: 'gmail.com',
   user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
   password: ENV['TYGUEN_EMAIL_PASSWORD'],
@@ -9,5 +9,5 @@ ActionMailer::Base.smtp_settings = {
 }
 
 ActionMailer::Base.default_url_options = {
-  host: "opservatory.com"
+  host: "gmail.com"
 }

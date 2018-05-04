@@ -15,9 +15,10 @@ $(document).ready(function() {
        locale: 'fr',
     events: {
       googleCalendarId: 'tyguen@gmail.com',
-      color: 'black',
+      color: 'blue',
       textColor: 'white',
-      rendering: 'background'
+      rendering: 'background',
+      className: ["background-events"]
     },
     header: {
       left:   'title',

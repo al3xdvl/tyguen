@@ -36,7 +36,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
-    port: 587,
+    port: 465,
     domain: 'gmail.com',
     user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
     password: ENV['TYGUEN_EMAIL_PASSWORD'],
