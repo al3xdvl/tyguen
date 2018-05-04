@@ -33,15 +33,21 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 465,
-    domain: 'gmail.com',
-    user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
-    password: ENV['TYGUEN_EMAIL_PASSWORD'],
-    authentication: :plain,
-    enable_starttls_auto: true
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.gmail.com",
+  #   port: 587,
+  #   domain: 'gmail.com',
+  #   user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
+  #   password: ENV['TYGUEN_EMAIL_PASSWORD'],
+  #   authentication: 'plain',
+  #   enable_starttls_auto: true
+  # }
+
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: 'ENV["MAILGUN_API_KEY"]',
+    domain: 'sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org',
   }
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
@@ -72,9 +78,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  # config.action_mailer.delivery_method = :mailgun
-  # config.action_mailer.mailgun_settings = {
-  #  api_key: 'ENV["MAILGUN_API_KEY"]',
-  #  domain: 'sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org',
-  # }
+
 end
