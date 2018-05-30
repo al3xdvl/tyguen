@@ -1,11 +1,14 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url(<%= asset_path 'gite.jpg' %>);">
   <div class="banner-content">
-    <img src=<%= asset_path 'logo1.gif' %> id="gdf"/>
+    <a href="http://www.gites-finistere.com/fr/index.php" target="_blank">
+      <img src=<%= asset_path 'logo1.gif' %> id="gdf"/>
+    </a>
     <h1>Gîte Ty Guen</h1>
     <p>Un gîte écologique, adapté aux handicapés à Plouguin, en Nord Finistère</p>
       <div id='buttons_home'>
       <a class="btn btn-primary btn-lg">Visiter</a>
       <%= link_to "Disponibilités", dispo_path, class:"btn btn-primary btn-lg" %>
+      <%= link_to "Tarifs", tarifs_path, class:"btn btn-primary btn-lg" %>
       <%= link_to "Nous contacter", new_message_path, class:"btn btn-primary btn-lg" %>
     </div>
   </div>

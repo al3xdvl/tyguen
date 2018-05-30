@@ -1,0 +1,49 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to root_path do %>
+    <%= image_tag 'gite.jpg', class: "avatar" %>
+    <% end %>
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <div class="dropdown">
+      <a href="" class="navbar-wagon-item navbar-wagon-link " data-toggle="dropdown">Tarifs</a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%= link_to "Tarifs à la semaine", tarifs_path %></li>
+          <li><%= link_to "Tarifs courts séjours", tarifscs_path %></li>
+          <li><a href="#">Charges</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+    <a href="" class="navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Visiter</a>
+    <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+      <%= link_to "Nous contacter", new_message_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+   <!--  <a href="" class="navbar-wagon-item navbar-wagon-link">Nous contacter</a> -->
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <a href="http://www.gites-finistere.com/fr/index.php" target="_blank">
+        <%= image_tag 'logo1.gif', class: "avatar" %>
+      </a>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Tarifs</a></li>
+        <li><a href="#">Visiter</a></li>
+        <li><a href="#">Nous contacter</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

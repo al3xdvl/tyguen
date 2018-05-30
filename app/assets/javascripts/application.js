@@ -15,15 +15,14 @@ $(document).ready(function() {
        locale: 'fr',
     events: {
       googleCalendarId: 'tyguen@gmail.com',
-      color: 'blue',
+      color: '#0065A8',
       textColor: 'white',
-      rendering: 'background',
       className: ["background-events"]
     },
     header: {
       left:   'title',
-      center: '',
-      right:  'today prevYear prev,next nextYear'
+      center: ' ',
+      right:  'prevYear prev,next nextYear'
     },
     buttonText: {
       today:    "Aujourd'hui",

@@ -1,0 +1,29 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+  <h2 class="text-center">Tarifs à la semaine 2018</h2>
+  <p class='text-center reserve'>Les tarifs sont en Euros et sont valables du 30/12/17 au 04/01/19. </br>
+  Les tarifs sont pour deux personnes. Merci d’ajouter 50 euros par personne supplémentaire. </br> Le linge de lit et de toilette est inclus dans le prix. </br>
+  N’oubliez pas de consulter le tableau des <%= link_to "disponibilités", dispo_path%>.</p>
+  <h4>Tarifs basse saison</h4>
+  <div class="bs-container">
+    <li class="bs-item" id="za">Zone A : 220 euros</li>
+    <li class="bs-item" id="zb">Zone B : 260 euros</li>
+    <li class="bs-item" id="zc">Zone C : 280 euros</li>
+    <li class="bs-item" id="zd">Zone D : 300 euros</li>
+  </div>
+
+  <h4 class="bs-title">Tarifs haute saison</h4>
+
+  <div class="bs-container">
+    <li class="bs-item" id="zh">Zone H : 380 euros</li>
+    <li class="bs-item" id="ze">Zone E : 420 euros</li>
+    <li class="bs-item" id="zf">Zone F : 420 euros</li>
+    <li class="bs-item" id="zg">Zone G : 440 euros</li>
+  </div>
+</div>
+
+<div class="container">
+<div class="calendrier2018">
+  <%= image_tag '2018.jpg', class: "image-tarifs", width: "800" %>
+</div>
+</div>

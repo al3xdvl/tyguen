@@ -1,0 +1,34 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+  <h2 class="text-center">Tarifs courts séjours 2018</h2>
+  <p class='text-center reserve'>Les tarifs sont en Euros et sont valables du 30/12/17 au 04/01/19. </br>
+  Courts séjours uniquement hors vacances scolaires, en zones tarifaires A et C. </br>
+  Les tarifs sont pour deux personnes. Pour les tarifs par personne supplémentaire, voir plus bas. </br> Le linge de lit et de toilette est inclus dans le prix. </br>
+  N’oubliez pas de consulter le tableau des <%= link_to "disponibilités", dispo_path%>.</p>
+  <h4>Tarifs zone A</h4>
+  <div class="bs-container">
+    <li class="bs-item" id="za">1 nuit : 80 euros</li>
+    <li class="bs-item" id="za">2 nuits : 110 euros</li>
+    <li class="bs-item" id="za">3 nuits : 132 euros</li>
+    <li class="bs-item" id="za">4 nuits : 150 euros</li>
+  </div>
+
+  <h4 class="bs-title">Tarifs zone C</h4>
+
+  <div class="bs-container">
+    <li class="bs-item" id="zc">1 nuit : 104 euros</li>
+    <li class="bs-item" id="zc">2 nuits : 143 euros</li>
+    <li class="bs-item" id="zc">3 nuits : 172 euros</li>
+    <li class="bs-item" id="zc">4 nuits : 195 euros</li>
+  </div>
+</div>
+
+<div class="container">
+<h5 class="tarifs-sup">Tarifs par personne supplémentaire courts séjours zone A et C :</h5>
+<ul id="tarifs-sup-list">
+<li>1 nuit = 20 euros</li>
+<li>2 nuits = 30 euros</li>
+<li>3 nuits = 35 euros</li>
+<li>4 nuits = 40 euros</li>
+</ul>
+</div>
