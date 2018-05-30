@@ -6,8 +6,10 @@
   </a>
 
   <!-- Right Navigation -->
+
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <div class="dropdown">
+       <%= link_to "Disponibilités", dispo_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <a href="" class="navbar-wagon-item navbar-wagon-link " data-toggle="dropdown">Tarifs</a>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "Tarifs à la semaine", tarifs_path %></li>

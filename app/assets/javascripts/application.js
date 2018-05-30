@@ -11,7 +11,7 @@
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
-       googleCalendarApiKey: ENV['GCAL_API_KEY'],
+       // googleCalendarApiKey: "AIzaSyCVZm2-uidFjJY8uS8iD20HocubVUSWZk4",
        locale: 'fr',
     events: {
       googleCalendarId: 'tyguen@gmail.com',
