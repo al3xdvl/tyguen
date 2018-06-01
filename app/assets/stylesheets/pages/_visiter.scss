@@ -70,20 +70,14 @@
     width: 50rem;
   }
 }
-.blog-container a {
-  color: #4d4dff;
-  text-decoration: none;
-  transition: .25s ease;
-  &:hover {
-    border-color: #ff4d4d;
-    color: #ff4d4d;
-  }
-}
+//
 // Blog body
 //-------------------------
 .blog-body {
   margin: 0 auto;
   width: 80%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .blog-title h1 a {
