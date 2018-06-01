@@ -1,0 +1,73 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+
+  <!DOCTYPE html>
+  <html>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body>
+
+<div class="w3-container">
+
+<div class="w3-content w3-display-container" style="max-width:600px">
+  <%= image_tag 'sdb1.jpg', class: "mySlides", style:"width:100%" %>
+  <%= image_tag 'sdb2p.jpg', class: "mySlides", style:"width:100%" %>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <!-- <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span> -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<p id="chambre">L’entrée dans la salle d’eau se fait par une porte coulissante. Tous les équipements sont à double hauteur afin que valides et personnes en fauteuils puissent y cohabiter facilement. Le lavabo est à 80cm de haut. Le toilette est surélevé et équipé d’une barre pour faciliter les transferts.</p>
+<p>La douche à l’italienne est équipée d’un siège et d’une barre d’appui, ainsi que d’une barre de douche réglable à la hauteur voulue. De plus, nous vous proposons sur demande une chaise de jardin avec accoudoirs dans le cas où cela serait plus confortable. Inutile d’amener votre linge de toilette, il est fourni.</p>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+

@@ -4,7 +4,6 @@
     <%= image_tag 'gite.jpg', class: "avatar" %>
     <% end %>
   </a>
-
   <!-- Right Navigation -->
 
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -14,16 +13,18 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "Tarifs à la semaine", tarifs_path %></li>
           <li><%= link_to "Tarifs courts séjours", tarifscs_path %></li>
-          <li><a href="#">Charges</a></li>
-          <li><a href="#">Conditions générales de vente</a></li>
+          <li><%= link_to "Charges", charges_path %></li>
+          <li><%= link_to "Conditions générales de vente", "/cgv2013.pdf" %></li>
         </ul>
     </div>
     <div class="dropdown">
     <a href="" class="navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Visiter</a>
     <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><%= link_to "Le gîte", gite_path %></li>
+          <li><%= link_to "Le salon/cuisine", salon_path%></li>
+          <li><%= link_to "La chambre", chambre_path %></li>
+          <li><%= link_to "La salle d'eau", sdb_path %></li>
+          <li><%= link_to "La mezzanine", mezzanine_path %></li>
         </ul>
       </div>
       <%= link_to "Nous contacter", new_message_path, class: "navbar-wagon-item navbar-wagon-link"  %>

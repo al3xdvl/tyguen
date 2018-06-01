@@ -6,7 +6,7 @@
     <h1>Gîte Ty Guen</h1>
     <p>Un gîte écologique, adapté aux handicapés à Plouguin, en Nord Finistère</p>
       <div id='buttons_home'>
-      <a class="btn btn-primary btn-lg">Visiter</a>
+      <%= link_to "Visiter", gite_path, class:"btn btn-primary btn-lg" %>
       <%= link_to "Disponibilités", dispo_path, class:"btn btn-primary btn-lg" %>
       <%= link_to "Tarifs", tarifs_path, class:"btn btn-primary btn-lg" %>
       <%= link_to "Nous contacter", new_message_path, class:"btn btn-primary btn-lg" %>

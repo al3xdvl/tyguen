@@ -12,14 +12,15 @@
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .bs-item {
-  padding: 5px;
-  width: 200px;
+  padding: 1em;
+  width: 12em;
   height: 3em;
-  margin-top: 10px;
-  line-height: 150px;
+  margin-top: 2em;
+  line-height: 6em;
   font-weight: bold;
   text-align: center;
 }
@@ -74,3 +75,7 @@
 #tarifs-sup-list {
     list-style-type: none;
   }
+
+.charges {
+  padding-top: 4em;
+}
