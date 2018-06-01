@@ -6,8 +6,12 @@ body {
 #buttons_home {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+.btn-lg {
+   margin-top: 1em;
+}
 #gdf {
   height: 20vh;
 
