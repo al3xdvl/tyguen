@@ -44,11 +44,11 @@ Rails.application.configure do
   #   enable_starttls_auto: true
   # }
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: 'ENV["MAILGUN_API_KEY"]',
-    domain: 'sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org',
-  }
+  # config.action_mailer.delivery_method = :mailgun
+  # config.action_mailer.mailgun_settings = {
+  #   api_key: 'ENV["MAILGUN_API_KEY"]',
+  #   domain: 'sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org',
+  # }
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
