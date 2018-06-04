@@ -1,0 +1,22 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+<%= simple_form_for @review do |f| %>
+  <%= f.input :content, label: "Votre commentaire" %>
+  <%= f.input :name, label: "Votre nom" %>
+  <%= f.input :date, label: "Dates de votre séjour" %>
+  <%= f.submit "Ajouter", class: "btn btn-primary" %>
+<% end %>
+
+<h2 class="text-center">Livre d'or</h2>
+<%= paginate @reviews %>
+<% @reviews.each do |review| %>
+<div class="blog-container-tarif">
+      <div class="blog-body-tarif">
+  <p><%= review.content %></p>
+  <i><p><%= review.name %> - <%= review.date %></p></i>
+</div>
+</div>
+<% end %>
+</div>
+
+

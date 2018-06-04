@@ -1,0 +1,6 @@
+<%= render 'shared/navbar' %>
+
+<%= simple_form_for @review do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Ajouter un commentaire", class: "btn btn-primary" %>
+<% end %>

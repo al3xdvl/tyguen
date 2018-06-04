@@ -9,6 +9,8 @@
 //= require fullcalendar/gcal
 //= require fullcalendar/locale-all
 
+
+
 $(document).ready(function() {
     $('#calendar').fullCalendar({
        googleCalendarApiKey: "AIzaSyCVZm2-uidFjJY8uS8iD20HocubVUSWZk4",

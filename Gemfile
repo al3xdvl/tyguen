@@ -23,6 +23,10 @@ gem 'jquery-rails'
 
 gem 'mailgun-ruby', '~>1.1.6'
 
+gem 'kaminari'
+
+gem 'rails-i18n'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
