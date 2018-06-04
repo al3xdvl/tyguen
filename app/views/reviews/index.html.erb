@@ -1,5 +1,5 @@
 <%= render 'shared/navbar' %>
-<div class="container col-lg-offset-3" id="form">
+<div class="container" id="form">
 <%= simple_form_for @review do |f| %>
   <%= f.input :content, label: "Votre commentaire" %>
   <%= f.input :name, label: "Votre nom" %>
