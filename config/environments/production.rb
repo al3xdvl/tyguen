@@ -64,11 +64,23 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "tyguen_#{Rails.env}"
-  config.action_mailer.default_url_options = { host: "https://tyguen.herokuapp.com/" }
-  # config.action_mailer.delivery_method = :smtp
+  Rails.application.routes.default_url_options[:host] = 'tyguen.herokuapp.com'
+  config.action_mailer.default_url_options = { host: "tyguen.herokuapp.com/" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
   # config.action_mailer.perform_caching = false
   # config.action_mailer.delivery_method = :mailgun
-  # config.action_mailer.mailgun_settings = {
+  config.action_mailer.mailgun_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV['GMAIL_DOMAIN'],
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
+    password: ENV['TYGUEN_EMAIL_PASSWORD']
+  }
   #   api_key: ENV['MAILGUN_API_KEY'],
   #   domain: 'tyguen.herokuapp.com',
   # }

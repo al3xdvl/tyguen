@@ -33,16 +33,17 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   address: "smtp.gmail.com",
-  #   port: 587,
-  #   domain: 'gmail.com',
-  #   user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
-  #   password: ENV['TYGUEN_EMAIL_PASSWORD'],
-  #   authentication: 'plain',
-  #   enable_starttls_auto: true
-  # }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV['GMAIL_DOMAIN'],
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: ENV['TYGUEN_EMAIL_ADDRESS'],
+    password: ENV['TYGUEN_EMAIL_PASSWORD']
+  }
 
   # config.action_mailer.delivery_method = :mailgun
   # config.action_mailer.mailgun_settings = {
