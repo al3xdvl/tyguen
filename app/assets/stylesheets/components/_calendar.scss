@@ -85,3 +85,17 @@ body {
     border: none;
 }
 
+.image-tarifs
+{
+height:50%;
+width:50%;
+transition:0.5s;
+}
+.image-tarifs:hover
+{
+height:100%;
+width:100%;
+transition:0.5s;
+
+}
+
