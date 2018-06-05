@@ -17,9 +17,9 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+gem 'jquery-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
-gem 'jquery-rails'
 
 gem 'kaminari'
 
