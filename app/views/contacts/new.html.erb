@@ -1,19 +1,20 @@
 <%= render 'shared/navbar' %>
-<div class="container" id="form">
-<div align="center">
-  <h3>Nous contacter</h3>
+<div class="container">
+  <h2 class="text-center">Nous contacter</h2>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, label: "Votre nom", :required => true %>
     <%= f.input :email, label: "Votre adresse courriel", :required => true %>
+    <%= f.input :telephone, label: "Votre numéro de téléphone" %>
+    <%= f.input :address, label: "Votre adresse postale" %>
+    <%= f.input :date, label: "Les dates auxquelles vous souhaitez venir", :required => true %>
     <%= f.input :message, label: "Votre message", :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
     <div>
       </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+      <%= f.button :submit, 'Envoyez votre message', :class=> "btn btn-primary" %>
     </div>
   <% end %>
-</div>
 </div>
