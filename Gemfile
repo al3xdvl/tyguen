@@ -14,7 +14,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 4.7'
 gem 'sass-rails'
 gem 'simple_form'
-gem 'mail_form'
+gem "mail_form", ">= 1.3.0"
 gem 'uglifier'
 gem 'webpacker'
 
