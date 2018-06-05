@@ -2,5 +2,8 @@
   <%= f.input :content, label: "Votre commentaire" %>
   <%= f.input :name, label: "Votre nom" %>
   <%= f.input :date, label: "Dates de votre séjour" %>
+  <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
   <%= f.submit "Ajouter", class: "btn btn-primary" %>
 <% end %>
