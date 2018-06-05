@@ -31,9 +31,7 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
-
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
-  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
@@ -45,11 +43,8 @@ Rails.application.configure do
     password: ENV['TYGUEN_EMAIL_PASSWORD']
   }
 
-  # config.action_mailer.delivery_method = :mailgun
-  # config.action_mailer.mailgun_settings = {
-  #   api_key: 'ENV["MAILGUN_API_KEY"]',
-  #   domain: 'sandboxe8685e7a7abd42538c63bf2364ba76d9.mailgun.org',
-  # }
+  config.action_mailer.perform_deliveries = true
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
