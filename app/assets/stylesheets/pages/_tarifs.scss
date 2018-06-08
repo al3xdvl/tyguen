@@ -25,6 +25,26 @@
   text-align: center;
 }
 
+
+.blog-container-tarif-title {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 100;
+  margin: 48px auto;
+  width: 20rem;
+  @media screen and (min-width: 480px) {
+    width: 28rem;
+  }
+  @media screen and (min-width: 767px) {
+    width: 40rem;
+  }
+  @media screen and (min-width: 959px) {
+    width: 65rem;
+  }
+}
+
 .blog-container-tarif {
   background: #fff;
   border-radius: 5px;
@@ -33,10 +53,27 @@
   margin-top: 1em;
 }
 
+
 .blog-body-tarif {
   margin: 0 auto;
   width: 100%;
   padding: 0.5em;
+}
+
+.blog-body-tarif-title {
+  margin: 0 auto;
+  width: 120%;
+  padding: 1em;
+}
+
+.blog-body-sup {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+}
+
+.tarif-title {
+  padding-left: 2em;
 }
 
 .zone {
@@ -80,16 +117,45 @@
   background: $dark-red;
 }
 
+
 .bs-title {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .image-tarifs {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 4em;
+  padding-top: 2em;
+  height:50%;
+  width:50%;
+  transition:0.5s;
 }
+
+.image-tarifs:hover {
+  height:100%;
+  width:100%;
+  transition:0.5s;
+}
+
+.image-tarifs-cs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0em;
+  height:50%;
+  width:50%;
+  transition:0.5s;
+}
+
+.image-tarifs-cs:hover {
+  height:100%;
+  width:100%;
+  transition:0.5s;
+}
+
+
+
 
 .tarifs-sup {
   padding-top: 4em;
