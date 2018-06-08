@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/pages/salon', to: 'pages#salon', as: 'salon'
   get '/pages/sdb', to: 'pages#sdb', as: 'sdb'
   get '/pages/mezzanine', to: 'pages#mezzanine', as: 'mezzanine'
+  get '/pages/situation', to: 'pages#situation', as: 'situation'
   get 'contact', to: 'messages#new', as: 'new_message'
   post 'contact', to: 'messages#create', as: 'create_message'
 

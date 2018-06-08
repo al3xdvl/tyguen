@@ -27,8 +27,19 @@
           <li><%= link_to "La mezzanine", mezzanine_path %></li>
         </ul>
       </div>
-      <%= link_to "Nous contacter", contacts_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+    <div class="dropdown">
+    <a href="" class="navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Infos pratiques</a>
+    <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%= link_to "Situation", situation_path %></li>
+          <li><%= link_to "Le salon/cuisine", salon_path%></li>
+          <li><%= link_to "La chambre", chambre_path %></li>
+          <li><%= link_to "La salle d'eau", sdb_path %></li>
+          <li><%= link_to "La mezzanine", mezzanine_path %></li>
+        </ul>
+      </div>
+
       <%= link_to "Livre d'or", reviews_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+      <%= link_to "Nous contacter", contacts_path, class: "navbar-wagon-item navbar-wagon-link"  %>
    <!--  <a href="" class="navbar-wagon-item navbar-wagon-link">Nous contacter</a> -->
 
     <!-- Profile picture with dropdown list -->
