@@ -4,6 +4,7 @@
     <%= image_tag 'gite.jpg', class: "avatar" %>
     <% end %>
   </a>
+  <h4>Gîte Ty Guen</h4>
   <!-- Right Navigation -->
 
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -14,7 +15,7 @@
           <li><%= link_to "Tarifs à la semaine", tarifs_path %></li>
           <li><%= link_to "Tarifs courts séjours", tarifscs_path %></li>
           <li><%= link_to "Charges", charges_path %></li>
-          <li><%= link_to "Conditions générales de vente", "/cgv2013.pdf" %></li>
+          <li><%= link_to "Conditions générales de vente", "/cgv2013.pdf", target: :_blank %></li>
         </ul>
     </div>
     <div class="dropdown">

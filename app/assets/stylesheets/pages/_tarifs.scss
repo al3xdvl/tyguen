@@ -86,35 +86,35 @@
   color: white;
 }
 #za {
-    background: $yellow;
+    background: rgba(249, 251, 0, 0.8);
 }
 
 #zb {
-    background: $violet;
+    background: rgba(220, 136, 255, 0.8);
 }
 
 #zc {
-    background: $green;
+    background: rgba(0, 194, 29, 0.8);
 }
 
 #zd {
-  background: $light-blue;
+  background: rgba(143, 203, 255, 0.8);
 }
 
 #zh {
-  background: $brown;
+  background: rgba(141, 55, 0, 0.8);
 }
 
 #ze {
-  background: $orange;
+  background: rgba(255, 83, 0, 0.8);
 }
 
 #zf {
-  background: $red;
+  background: rgba(255, 83, 0, 0.8);
 }
 
 #zg {
-  background: $dark-red;
+  background: rgba(243, 0, 0, 0.8);
 }
 
 
@@ -167,4 +167,9 @@
 
 .charges {
   padding-top: 4em;
+}
+
+.calendar2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
